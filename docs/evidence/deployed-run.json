@@ -1,0 +1,196 @@
+{
+  "started_at": "2026-10-16T20:55:28.001Z",
+  "finished_at": "2026-10-16T20:55:39.871Z",
+  "version": "66833893f86ad3d8c49c51dacef8fb19a6c5fa61",
+  "health": {
+    "status": "ok",
+    "tool_version": "3.0.0",
+    "release": "66833893f86ad3d8c49c51dacef8fb19a6c5fa61",
+    "storage": "configured"
+  },
+  "setup": {
+    "status": 201,
+    "body": {
+      "session_id": "834cff0d-a7f6-402a-b18c-25ed9ca843ad"
+    }
+  },
+  "response_status": 200,
+  "report": {
+    "session_id": "834cff0d-a7f6-402a-b18c-25ed9ca843ad",
+    "target_url": "https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/system",
+    "results": [
+      {
+        "test_id": "T-01",
+        "outcome": "pass",
+        "message": "Exact addition/modification/deletion/category set: expected behavior observed."
+      },
+      {
+        "test_id": "T-02",
+        "outcome": "pass",
+        "message": "Retrieve immutable saved result: expected behavior observed."
+      },
+      {
+        "test_id": "T-03",
+        "outcome": "pass",
+        "message": "Default base is first parent: expected behavior observed."
+      },
+      {
+        "test_id": "T-04",
+        "outcome": "pass",
+        "message": "Missing commit is rejected: expected behavior observed."
+      },
+      {
+        "test_id": "T-05",
+        "outcome": "pass",
+        "message": "Malformed JSON is rejected: expected behavior observed."
+      },
+      {
+        "test_id": "T-06",
+        "outcome": "pass",
+        "message": "Repository without owner is rejected: expected behavior observed."
+      },
+      {
+        "test_id": "T-07",
+        "outcome": "pass",
+        "message": "Incorrect field type is rejected: expected behavior observed."
+      },
+      {
+        "test_id": "T-08",
+        "outcome": "pass",
+        "message": "Invalid base commit is rejected: expected behavior observed."
+      },
+      {
+        "test_id": "T-09",
+        "outcome": "error",
+        "source": "system",
+        "message": "Target returned an unexpected server error."
+      },
+      {
+        "test_id": "T-10",
+        "outcome": "error",
+        "source": "system",
+        "message": "Target returned an unexpected server error."
+      },
+      {
+        "test_id": "T-11",
+        "outcome": "pass",
+        "message": "Unknown analysis returns 404: expected behavior observed."
+      },
+      {
+        "test_id": "T-12",
+        "outcome": "pass",
+        "message": "Five equivalent runs have identical significant output: expected behavior observed."
+      },
+      {
+        "test_id": "T-13",
+        "outcome": "pass",
+        "message": "Identical commits have no changes: expected behavior observed."
+      },
+      {
+        "test_id": "T-14",
+        "outcome": "pass",
+        "message": "New analysis IDs preserve prior evidence: expected behavior observed."
+      }
+    ],
+    "coverage": {
+      "code": {
+        "covered": null,
+        "total": null,
+        "basis": "Per-session source-line instrumentation is unavailable; local test coverage is separate."
+      },
+      "component": {
+        "covered": null,
+        "total": null,
+        "basis": "Phase 2 supplies no agreed component inventory or exercise rule. Proposed components await pod approval."
+      },
+      "system": {
+        "covered": 3,
+        "total": 10,
+        "basis": "Full AC-01, AC-07 and AC-10 exercised by evaluable calls. AC-06 retrieval and AC-08 missing-resource checks are partial and excluded. Coverage describes execution, not passing results."
+      }
+    }
+  },
+  "metrics": {
+    "totals": [
+      {
+        "event": "ANALYSIS_NOT_FOUND",
+        "status": "404",
+        "count": 2,
+        "average_ms": 114.5
+      },
+      {
+        "event": "COMMUNICATION_FAILED",
+        "status": "500",
+        "count": 1,
+        "average_ms": 0
+      },
+      {
+        "event": "INVALID_REQUEST",
+        "status": "400",
+        "count": 10,
+        "average_ms": 44.2
+      },
+      {
+        "event": "NOT_FOUND",
+        "status": "404",
+        "count": 5,
+        "average_ms": 0
+      },
+      {
+        "event": "UPSTREAM_RATE_LIMIT",
+        "status": "500",
+        "count": 8,
+        "average_ms": 136.4
+      },
+      {
+        "event": "UPSTREAM_UNAVAILABLE",
+        "status": "500",
+        "count": 1,
+        "average_ms": 40
+      },
+      {
+        "event": "analysis_completed",
+        "status": "SUCCESS",
+        "count": 9,
+        "average_ms": 853.9
+      }
+    ],
+    "recent": [
+      {
+        "event": "analysis_completed",
+        "status": "SUCCESS",
+        "elapsed_ms": 640,
+        "analysis_id": "cca9e22b-7e3c-40b1-b4ce-1dd56cc25a77",
+        "created_at": "2026-10-16T20:55:37.816Z"
+      },
+      {
+        "event": "analysis_completed",
+        "status": "SUCCESS",
+        "elapsed_ms": 694,
+        "analysis_id": "f8e23afc-5202-440d-9d54-3a87d179be02",
+        "created_at": "2026-10-16T20:55:37.046Z"
+      },
+      {
+        "event": "analysis_completed",
+        "status": "SUCCESS",
+        "elapsed_ms": 760,
+        "analysis_id": "69120bd1-7ba8-478d-a23b-4ce13ed4c8b0",
+        "created_at": "2026-10-16T20:55:36.222Z"
+      },
+      {
+        "event": "analysis_completed",
+        "status": "SUCCESS",
+        "elapsed_ms": 946,
+        "analysis_id": "ba203009-f9bc-4ce4-bad0-f956c49d8837",
+        "created_at": "2026-10-16T20:55:35.328Z"
+      },
+      {
+        "event": "analysis_completed",
+        "status": "SUCCESS",
+        "elapsed_ms": 695,
+        "analysis_id": "5f4ab20b-df72-47e2-9002-664b01a4f10c",
+        "created_at": "2026-10-16T20:55:34.208Z"
+      }
+    ]
+  }
+}

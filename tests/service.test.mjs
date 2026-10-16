@@ -62,6 +62,30 @@ test('AC-08: failed evidence write returns 500 and cannot be retrieved',async()=
   const {env,objects}=environment();env.BUCKET.put=async()=>{throw new Error('secret');};
   const r=await call(env,'/system/analyze',input);assert.equal(r.status,500);assert.equal(r.body.code,'STORAGE_FAILED');assert.equal(objects.size,0);
 });
+test('GitHub quota fallback distinguishes public repository and missing commit without inventing analysis',async()=>{
+  const {env}=environment();
+  const fallback=async(url,options)=>{
+    assert.equal(options.redirect,'manual');
+    if(url.startsWith('https://api.github.com/'))return Response.json({}, {status:403});
+    if(url===`https://github.com/${fixture.repository}`)return new Response('Public repository',{status:200});
+    return new Response('Not Found',{status:404});
+  };
+  const r=await call(env,'/system/analyze',input,fallback);assert.equal(r.status,404);
+  const missing=await call(env,'/system/analyze',{...input,repository:'ani131/does-not-exist'},fallback);assert.equal(missing.status,404);
+  const unknownMetadata=await call(env,'/system/analyze',input,async()=>new Response('Public page',{status:200}));assert.equal(unknownMetadata.status,500);
+});
+test('full-SHA cache survives visibility expiry without inventing a new commit comparison',async()=>{
+  const {env}=environment();assert.equal((await call(env,'/system/analyze',input)).status,200);
+  const original=Date.now;const later=original()+660000;Date.now=()=>later;
+  try{
+    const fallback=async(url)=>{
+      if(url===`https://api.github.com/repos/${fixture.repository}`)return Response.json({}, {status:403});
+      if(url===`https://github.com/${fixture.repository}`)return new Response('Public',{status:200});
+      throw new Error('Unexpected metadata refetch');
+    };
+    const r=await call(env,'/system/analyze',input,fallback);assert.equal(r.status,200);assert.deepEqual(r.body.changes,fixture.expected_changes);
+  }finally{Date.now=original;}
+});
 test('AC-10: five runs are stable and use separate immutable objects',async()=>{
   const {env,objects}=environment();const all=[];
   for(let i=0;i<5;i++){const r=await call(env,'/system/analyze',input);assert.equal(r.status,200);const {analysis_id,created_at,...stable}=r.body;assert.ok(analysis_id);assert.ok(created_at);all.push(stable);}

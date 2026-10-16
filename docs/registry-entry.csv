@@ -1,0 +1,2 @@
+Team,System base URL,Tester base URL,Intra-pod specification URL,Access / run notes
+16,https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/system,https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/tester,https://github.com/ani131/documentation-tracker-phase3/blob/main/docs/shared-spec.md,Public; no credentials. Shared-spec clarifications await pod approval. system setup 10s; tester setup 60s; tester run 300s; fresh UUID sessions; no destructive reset. GitHub quota limits apply.

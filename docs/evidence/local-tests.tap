@@ -1,304 +1,322 @@
 TAP version 13
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":11,"analysis_id":"c44fe979-055b-4ecd-af93-b93213171b24","at":"2026-10-16T20:52:38.541Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"a1378f66-1f54-4c93-8c57-47384917cf49","at":"2026-10-16T20:52:38.549Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"25eb488d-77f9-4830-956d-32a13e154c3f","at":"2026-10-16T20:52:38.554Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"a26f20d2-dc66-4e60-a926-904906573f04","at":"2026-10-16T20:52:38.556Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"151e50cc-a24a-41e0-bc92-ee332b6f09e3","at":"2026-10-16T20:52:38.557Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.561Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.565Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.569Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.572Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.574Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.576Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.580Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.583Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.586Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.589Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.592Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.594Z"}
-# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.596Z"}
-# {"event":"analysis_completed","status":"ERROR","elapsed_ms":2,"analysis_id":"fa9f491a-df2d-413b-a2db-09b5e62d7bf0","at":"2026-10-16T20:52:38.602Z"}
-# {"event":"analysis_completed","status":"ERROR","elapsed_ms":1,"analysis_id":"2a5282e1-0b89-4b9a-a6e4-16da0bb8e4ef","at":"2026-10-16T20:52:38.605Z"}
-# {"event":"analysis_completed","status":"ERROR","elapsed_ms":1,"analysis_id":"4c1ca1c6-2d15-448f-81ef-d8cd2a64f0d4","at":"2026-10-16T20:52:38.608Z"}
-# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.612Z"}
-# {"event":"UPSTREAM_RATE_LIMIT","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.617Z"}
-# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.619Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.621Z"}
-# {"event":"STORAGE_FAILED","status":500,"elapsed_ms":2,"analysis_id":null,"at":"2026-10-16T20:52:38.625Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"c904e451-e2ea-4640-bdcb-7a65ea6b4438","at":"2026-10-16T20:52:38.629Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"a80d17c9-d584-4b00-873f-db3e30a06bdd","at":"2026-10-16T20:52:38.631Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"34bcdce9-ab4d-4eb4-8746-f1e4c3bfb420","at":"2026-10-16T20:52:38.632Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":3,"analysis_id":"5e5d8b8e-8c6e-44fd-b831-0d958d9235c4","at":"2026-10-16T20:52:38.635Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"58b91168-8147-4806-9f37-b84333d15beb","at":"2026-10-16T20:52:38.636Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"312937c3-e544-44d1-993d-a92d6853aa76","at":"2026-10-16T20:52:38.640Z"}
-# {"event":"SESSION_EXISTS","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.643Z"}
-# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.644Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.644Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.645Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.646Z"}
-# {"event":"REPORT_NOT_READY","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.652Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"b1df2d6e-c6b8-406b-b088-5139cca0cc49","at":"2026-10-16T20:52:38.655Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"3b589ce3-7d41-4e14-8728-69e2b8b826e7","at":"2026-10-16T20:52:38.675Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.676Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.679Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.681Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.682Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.683Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.685Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.686Z"}
-# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.687Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"a58d5a27-948c-4522-b325-b672e755f647","at":"2026-10-16T20:52:38.688Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"68067b92-3a24-40bf-bd7c-3970ff5be78e","at":"2026-10-16T20:52:38.689Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"334bcc1d-a7c1-4e21-b094-df4e0d147683","at":"2026-10-16T20:52:38.690Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"84e116a6-7d29-44f5-8c1d-359b6d1fa4e5","at":"2026-10-16T20:52:38.691Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"067ff456-6550-49a6-9b5d-c288b2d9558d","at":"2026-10-16T20:52:38.692Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"2df70e8f-4169-42ec-90bc-6ee143eae238","at":"2026-10-16T20:52:38.695Z"}
-# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.700Z"}
-# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.705Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":3,"analysis_id":"b1aa1897-bc01-4a42-bcbb-7fd02a00fd0e","at":"2026-10-16T20:52:38.707Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"5e436de1-aeae-4dc8-9db5-cfb7e791a6de","at":"2026-10-16T20:52:38.709Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.710Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.712Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.713Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.715Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.717Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.718Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.720Z"}
-# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.721Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"28f19c4b-681a-4321-8064-1b23fadcac3e","at":"2026-10-16T20:52:38.723Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"579accd2-a749-4064-bb90-a5ff1fad77bb","at":"2026-10-16T20:52:38.725Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"1afa6ce8-361b-42b0-a86a-58f919b4e0f0","at":"2026-10-16T20:52:38.727Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"8a62a0eb-7c04-4d3a-a2d8-aa8f1bd45a5d","at":"2026-10-16T20:52:38.728Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"d319a134-8e7f-4d51-9861-2ecd4fa150c2","at":"2026-10-16T20:52:38.731Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"484de105-6f74-458c-8531-5944abe15a72","at":"2026-10-16T20:52:38.735Z"}
-# {"event":"TARGET_NOT_APPROVED","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.741Z"}
-# {"event":"TARGET_NOT_APPROVED","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.742Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.744Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.745Z"}
-# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.746Z"}
-# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.747Z"}
-# {"event":"TESTER_ABORTED","status":500,"elapsed_ms":200000,"analysis_id":null,"at":"2026-10-16T20:52:38.766Z"}
-# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.768Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"c7ba598c-3a24-42a5-830c-fc24ac86945a","at":"2026-10-16T20:52:38.771Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"984300c0-1717-48c2-a3fa-a0540a8ce17f","at":"2026-10-16T20:52:38.915Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.920Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"51896686-81e5-4b3f-9822-8b30924d0134","at":"2026-10-16T20:52:38.926Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"0a819ac9-6c63-4b26-911e-ac15953cd560","at":"2026-10-16T20:52:38.930Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.932Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.933Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.934Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.934Z"}
-# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.935Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.936Z"}
-# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:52:38.936Z"}
-# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:52:38.937Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"2806bdb8-fd6f-40b4-961f-b832c0633dba","at":"2026-10-16T20:52:38.937Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"7627b153-ba21-4329-abee-22c712029045","at":"2026-10-16T20:52:38.938Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"80582f3b-6f95-4d8f-9e63-cd28b7c9b9de","at":"2026-10-16T20:52:38.939Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"a7f1b59a-2240-4035-beb2-95a8981a6034","at":"2026-10-16T20:52:38.939Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"fba17442-9c53-41fd-a7ad-2653f427a75b","at":"2026-10-16T20:52:38.940Z"}
-# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"234bb0bd-7882-4047-b80a-78d28babab05","at":"2026-10-16T20:52:38.941Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":12,"analysis_id":"0e8d826e-de36-49a1-ae81-0b5745a6c9ea","at":"2026-10-16T21:01:09.135Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"3d44d346-c5fb-4967-8420-e00707d88e9a","at":"2026-10-16T21:01:09.140Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"45182320-3728-491a-a714-a0eeaed13e2c","at":"2026-10-16T21:01:09.145Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"54f3321f-5f93-4f8d-8278-3f6caa1ea6d4","at":"2026-10-16T21:01:09.148Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"b8d124bd-ae44-4eb1-ad0b-4ddd8523ead6","at":"2026-10-16T21:01:09.149Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.152Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.155Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.158Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.161Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.165Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.167Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.169Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.171Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.174Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.176Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.180Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.182Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.183Z"}
+# {"event":"analysis_completed","status":"ERROR","elapsed_ms":2,"analysis_id":"84e72f66-6ed5-4579-ae18-36a4d02544de","at":"2026-10-16T21:01:09.188Z"}
+# {"event":"analysis_completed","status":"ERROR","elapsed_ms":1,"analysis_id":"34f06242-f912-49c6-b29a-9a3ff55d062b","at":"2026-10-16T21:01:09.191Z"}
+# {"event":"analysis_completed","status":"ERROR","elapsed_ms":1,"analysis_id":"7e593551-31d3-44a3-b8aa-d66ce9dd970a","at":"2026-10-16T21:01:09.195Z"}
+# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.200Z"}
+# {"event":"NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.203Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.203Z"}
+# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.206Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.209Z"}
+# {"event":"STORAGE_FAILED","status":500,"elapsed_ms":3,"analysis_id":null,"at":"2026-10-16T21:01:09.214Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.218Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.219Z"}
+# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.221Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":5,"analysis_id":"31d519c8-4c4f-4aaa-b238-4e82dd719829","at":"2026-10-16T21:01:09.228Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"491644f1-4a30-417b-b844-65f4b63088f2","at":"2026-10-16T21:01:09.230Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"17dea95b-697d-4c1e-9b91-195f313582a0","at":"2026-10-16T21:01:09.234Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"b168cb7e-b74d-4d56-9c26-77b516d17501","at":"2026-10-16T21:01:09.235Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"1b21e82a-851f-408f-ae94-483a5a53ec75","at":"2026-10-16T21:01:09.237Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"21120026-2c6f-45db-a26c-77a4ad6dd3ff","at":"2026-10-16T21:01:09.238Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"dbb41cdc-a083-47a4-bc52-889609986496","at":"2026-10-16T21:01:09.238Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"5a0827cb-4abe-43aa-8e7a-0fc4dc1e08ff","at":"2026-10-16T21:01:09.242Z"}
+# {"event":"SESSION_EXISTS","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.246Z"}
+# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.248Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.249Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.249Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.250Z"}
+# {"event":"REPORT_NOT_READY","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.254Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"3b981cf6-1d7d-46a7-82d4-99c934caef1a","at":"2026-10-16T21:01:09.257Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"ad447ec5-e0e5-4d33-a03a-dfb89f58470e","at":"2026-10-16T21:01:09.276Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.278Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.281Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.282Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.284Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.285Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.286Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.287Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.287Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"cb1a4543-d887-4871-8487-5eff7c76845c","at":"2026-10-16T21:01:09.288Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"8bc050a3-577a-46b3-8f67-3c199ab7e81d","at":"2026-10-16T21:01:09.289Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"22582867-12a6-40e6-a419-a5732741247e","at":"2026-10-16T21:01:09.290Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"3fd9aea8-b654-4940-bbcc-84b3e9298a27","at":"2026-10-16T21:01:09.291Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"ff024094-0315-46e5-bca7-5a7a7d2ff0bc","at":"2026-10-16T21:01:09.292Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"74151059-6cf1-4b69-b271-78c89bd908a8","at":"2026-10-16T21:01:09.293Z"}
+# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.297Z"}
+# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.301Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"3210f02a-37a7-4ea5-bf49-e90794d7a4c8","at":"2026-10-16T21:01:09.303Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"a56b748c-fada-4163-bb52-e733eff74c1a","at":"2026-10-16T21:01:09.305Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.306Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.307Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.307Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.308Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.309Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.309Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":5,"analysis_id":null,"at":"2026-10-16T21:01:09.315Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.316Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"ed4096d1-e44c-467d-baf4-61fff36ce465","at":"2026-10-16T21:01:09.317Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"2d234363-998f-438c-b643-12e751a658d9","at":"2026-10-16T21:01:09.318Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"5ce0ed14-6a01-4f70-beec-0f207a1bfabf","at":"2026-10-16T21:01:09.319Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"f2ef445c-e169-467e-bcb6-ea3390d666a6","at":"2026-10-16T21:01:09.320Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"5305034d-12d9-42b6-ba70-4d954f2d8c71","at":"2026-10-16T21:01:09.320Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"6f18d9d0-9d75-4660-a165-cd90bc6be805","at":"2026-10-16T21:01:09.321Z"}
+# {"event":"TARGET_NOT_APPROVED","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.325Z"}
+# {"event":"TARGET_NOT_APPROVED","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.326Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.326Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.327Z"}
+# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.327Z"}
+# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.328Z"}
+# {"event":"TESTER_ABORTED","status":500,"elapsed_ms":200000,"analysis_id":null,"at":"2026-10-16T21:01:09.343Z"}
+# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.347Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"bc480132-f560-45a2-a828-e7b531f02e2c","at":"2026-10-16T21:01:09.351Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"6a589576-8961-4ea1-933b-2120004fdd61","at":"2026-10-16T21:01:09.480Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.485Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"ba87ab40-b325-474e-bbf8-885edf6a6db0","at":"2026-10-16T21:01:09.491Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"4d764ccc-aad2-42a4-8b08-6da9f8e76061","at":"2026-10-16T21:01:09.493Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.495Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.497Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.498Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.499Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.499Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.500Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T21:01:09.502Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T21:01:09.502Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"3f96b14c-d011-46ed-ad5c-928ccf32f9db","at":"2026-10-16T21:01:09.504Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"a71ab048-f314-4d7b-84c6-8c4e785e03bc","at":"2026-10-16T21:01:09.506Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"37050cab-5d79-46da-bb3d-cba0ccf30583","at":"2026-10-16T21:01:09.507Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"200ef57d-86dc-4fed-8de1-6b3868aa29e6","at":"2026-10-16T21:01:09.509Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"b69940e9-8276-4c8f-9e1b-7a0506402620","at":"2026-10-16T21:01:09.512Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"a2293e83-4e29-448c-9188-8cae52530109","at":"2026-10-16T21:01:09.514Z"}
 # Subtest: AC-01: classify all categories with directory precedence
 ok 1 - AC-01: classify all categories with directory precedence
   ---
-  duration_ms: 2.4169
+  duration_ms: 2.7349
   type: 'test'
   ...
 # Subtest: AC-01: normalize rename and copy without dropping old paths
 ok 2 - AC-01: normalize rename and copy without dropping old paths
   ---
-  duration_ms: 2.0922
+  duration_ms: 2.2048
   type: 'test'
   ...
 # Subtest: AC-01/AC-06: exact fixture result, retrieval and recreated application store
 ok 3 - AC-01/AC-06: exact fixture result, retrieval and recreated application store
   ---
-  duration_ms: 79.1023
+  duration_ms: 73.5677
   type: 'test'
   ...
 # Subtest: AC-01: first-parent default, root commit and identical commit boundaries
 ok 4 - AC-01: first-parent default, root commit and identical commit boundaries
   ---
-  duration_ms: 7.2113
+  duration_ms: 8.0978
   type: 'test'
   ...
 # Subtest: AC-07: reject missing
 ok 5 - AC-07: reject missing
   ---
-  duration_ms: 4.2718
+  duration_ms: 2.9151
   type: 'test'
   ...
 # Subtest: AC-07: reject malformed
 ok 6 - AC-07: reject malformed
   ---
-  duration_ms: 3.2971
+  duration_ms: 2.9396
   type: 'test'
   ...
 # Subtest: AC-07: reject repository
 ok 7 - AC-07: reject repository
   ---
-  duration_ms: 3.5099
+  duration_ms: 2.9918
   type: 'test'
   ...
 # Subtest: AC-07: reject type
 ok 8 - AC-07: reject type
   ---
-  duration_ms: 2.3543
+  duration_ms: 3.3466
   type: 'test'
   ...
 # Subtest: AC-07: reject base
 ok 9 - AC-07: reject base
   ---
-  duration_ms: 1.9656
+  duration_ms: 2.5533
   type: 'test'
   ...
 # Subtest: AC-07: reject extra
 ok 10 - AC-07: reject extra
   ---
-  duration_ms: 2.009
+  duration_ms: 2.1009
   type: 'test'
   ...
 # Subtest: AC-07: reject array
 ok 11 - AC-07: reject array
   ---
-  duration_ms: 4.7613
+  duration_ms: 2.1308
   type: 'test'
   ...
 # Subtest: AC-07: reject null
 ok 12 - AC-07: reject null
   ---
-  duration_ms: 2.5473
+  duration_ms: 1.7882
   type: 'test'
   ...
 # Subtest: AC-07: reject oversize
 ok 13 - AC-07: reject oversize
   ---
-  duration_ms: 2.7929
+  duration_ms: 2.3756
   type: 'test'
   ...
 # Subtest: AC-07: unsupported Content-Type rejected
 ok 14 - AC-07: unsupported Content-Type rejected
   ---
-  duration_ms: 2.8931
+  duration_ms: 2.0849
   type: 'test'
   ...
 # Subtest: AC-08: nonexistent repo, commit and saved analysis return explicit 404
 ok 15 - AC-08: nonexistent repo, commit and saved analysis return explicit 404
   ---
-  duration_ms: 6.9197
+  duration_ms: 7.7249
   type: 'test'
   ...
 # Subtest: AC-08: incomplete comparison is saved as ERROR; no false success
 ok 16 - AC-08: incomplete comparison is saved as ERROR; no false success
   ---
-  duration_ms: 12.5677
+  duration_ms: 13.1957
   type: 'test'
   ...
 # Subtest: AC-08/AC-09: upstream errors are explicit and redact secret-bearing exceptions
 ok 17 - AC-08/AC-09: upstream errors are explicit and redact secret-bearing exceptions
   ---
-  duration_ms: 12.2227
+  duration_ms: 11.5988
   type: 'test'
   ...
 # Subtest: AC-08: failed evidence write returns 500 and cannot be retrieved
 ok 18 - AC-08: failed evidence write returns 500 and cannot be retrieved
   ---
-  duration_ms: 3.9131
+  duration_ms: 5.8502
+  type: 'test'
+  ...
+# Subtest: GitHub quota fallback distinguishes public repository and missing commit without inventing analysis
+ok 19 - GitHub quota fallback distinguishes public repository and missing commit without inventing analysis
+  ---
+  duration_ms: 6.3825
+  type: 'test'
+  ...
+# Subtest: full-SHA cache survives visibility expiry without inventing a new commit comparison
+ok 20 - full-SHA cache survives visibility expiry without inventing a new commit comparison
+  ---
+  duration_ms: 8.7875
   type: 'test'
   ...
 # Subtest: AC-10: five runs are stable and use separate immutable objects
-ok 19 - AC-10: five runs are stable and use separate immutable objects
+ok 21 - AC-10: five runs are stable and use separate immutable objects
   ---
-  duration_ms: 11.4758
+  duration_ms: 8.6738
   type: 'test'
   ...
 # Subtest: AC-09: only fixed GitHub HTTPS GETs are made; scripts are metadata
-ok 20 - AC-09: only fixed GitHub HTTPS GETs are made; scripts are metadata
+ok 22 - AC-09: only fixed GitHub HTTPS GETs are made; scripts are metadata
   ---
-  duration_ms: 3.571
+  duration_ms: 3.2152
   type: 'test'
   ...
 # Subtest: system sessions reject duplicates, invalid and unknown IDs
-ok 21 - system sessions reject duplicates, invalid and unknown IDs
+ok 23 - system sessions reject duplicates, invalid and unknown IDs
   ---
-  duration_ms: 6.3152
+  duration_ms: 7.7027
   type: 'test'
   ...
 # Subtest: tester setup does not run tests; one complete run; immutable lookup and conflict
-ok 22 - tester setup does not run tests; one complete run; immutable lookup and conflict
+ok 24 - tester setup does not run tests; one complete run; immutable lookup and conflict
   ---
-  duration_ms: 54.0799
+  duration_ms: 47.5094
   type: 'test'
   ...
 # Subtest: tester run claims are atomic across simultaneous calls
-ok 23 - tester run claims are atomic across simultaneous calls
+ok 25 - tester run claims are atomic across simultaneous calls
   ---
-  duration_ms: 37.425
+  duration_ms: 25.1912
   type: 'test'
   ...
 # Subtest: tester rejects unapproved targets and SSRF, and unknown sessions
-ok 24 - tester rejects unapproved targets and SSRF, and unknown sessions
+ok 26 - tester rejects unapproved targets and SSRF, and unknown sessions
   ---
-  duration_ms: 8.7652
+  duration_ms: 5.3328
   type: 'test'
   ...
 # Subtest: tester forwards system setup failure exactly and does not create runnable session
-ok 25 - tester forwards system setup failure exactly and does not create runnable session
+ok 27 - tester forwards system setup failure exactly and does not create runnable session
   ---
-  duration_ms: 4.5569
+  duration_ms: 2.9318
   type: 'test'
   ...
 # Subtest: tester reports communication and unexpected system errors without mislabeling pass
-ok 26 - tester reports communication and unexpected system errors without mislabeling pass
+ok 28 - tester reports communication and unexpected system errors without mislabeling pass
   ---
-  duration_ms: 8.394
+  duration_ms: 8.5856
   type: 'test'
   ...
 # Subtest: tester abort retains all planned outcomes and never permits another run
-ok 27 - tester abort retains all planned outcomes and never permits another run
+ok 29 - tester abort retains all planned outcomes and never permits another run
   ---
-  duration_ms: 7.3517
+  duration_ms: 7.4633
   type: 'test'
   ...
 # Subtest: actual observability endpoint contains durable, redacted operational evidence
-ok 28 - actual observability endpoint contains durable, redacted operational evidence
+ok 30 - actual observability endpoint contains durable, redacted operational evidence
   ---
-  duration_ms: 4.5951
+  duration_ms: 5.3213
   type: 'test'
   ...
 # Subtest: both OpenAPI documents include every required operation and defined schemas
-ok 29 - both OpenAPI documents include every required operation and defined schemas
+ok 31 - both OpenAPI documents include every required operation and defined schemas
   ---
-  duration_ms: 1.051
+  duration_ms: 0.9904
   type: 'test'
   ...
 # Subtest: contract schemas compile and validate actual success, error and tester reports
-ok 30 - contract schemas compile and validate actual success, error and tester reports
+ok 32 - contract schemas compile and validate actual success, error and tester reports
   ---
-  duration_ms: 177.8591
+  duration_ms: 169.1436
   type: 'test'
   ...
-1..30
-# tests 30
+1..32
+# tests 32
 # suites 0
-# pass 30
+# pass 32
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 1074.3394
+# duration_ms 1069.4637
 # start of coverage report
 # --------------------------------------------------------------
 # file          | line % | branch % | funcs % | uncovered lines
 # --------------------------------------------------------------
 # src           |        |          |         | 
-#  analysis.mjs | 100.00 |    92.41 |  100.00 | 
-#  service.mjs  |  95.24 |    85.00 |   50.00 | 37-38 57
+#  analysis.mjs |  97.99 |    91.56 |  100.00 | 103-105
+#  service.mjs  |  96.83 |    86.42 |   50.00 | 37-38
 #  spec.mjs     | 100.00 |   100.00 |  100.00 | 
 #  tester.mjs   | 100.00 |    89.08 |  100.00 | 
 # tests         |        |          |         | 
 #  helpers.mjs  |  98.04 |    95.65 |   93.75 | 40
 # --------------------------------------------------------------
-# all files     |  98.93 |    90.48 |   96.84 | 
+# all files     |  98.47 |    90.46 |   96.84 | 
 # --------------------------------------------------------------
 # end of coverage report

@@ -80,12 +80,29 @@ export class Store {
 }
 async function github(path, store, fetcher) {
   const key = 'github:' + path; const old = await store.get(key);
-  if (old && Date.now() - old.cached_at < 10 * 60 * 1000) return old.data;
+  const immutable=/\/commits\/[a-f0-9]{40}$|\/compare\/[a-f0-9]{40}\.\.\.[a-f0-9]{40}$/i.test(path);
+  if (old && (immutable || Date.now() - old.cached_at < 10 * 60 * 1000)) return old.data;
   let response;
   try { response = await fetcher('https://api.github.com/repos/' + path, { headers: { 'Accept':'application/vnd.github+json', 'User-Agent':'DocumentationTracker/3.0', 'X-GitHub-Api-Version':'2022-11-28' }, signal: AbortSignal.timeout(10000), redirect:'manual' }); }
   catch { throw new Fault(500, 'UPSTREAM_UNAVAILABLE', 'GitHub could not be reached within 10 seconds.'); }
   if ([404,422,409].includes(response.status)) throw new Fault(404, 'RESOURCE_NOT_FOUND', 'Public repository or commit was not found.');
-  if ([403,429].includes(response.status)) throw new Fault(500, 'UPSTREAM_RATE_LIMIT', 'GitHub access or rate limit prevented analysis; retry later.');
+  if ([403,429].includes(response.status)) {
+    // Anonymous HTML status can establish public visibility or absence without
+    // pretending that a denied API request was a successful commit analysis.
+    let publicResponse;
+    if(!path.includes('/compare/')){
+      try { publicResponse=await fetcher('https://github.com/'+path.replace('/commits/','/commit/'),{headers:{'User-Agent':'DocumentationTracker/3.0'},redirect:'manual',signal:AbortSignal.timeout(10000)}); } catch { /* Preserve the explicit upstream failure below. */ }
+      if(publicResponse?.status===404)throw new Fault(404,'RESOURCE_NOT_FOUND','Public repository or commit was not found.');
+      if(publicResponse?.status===200&&!path.includes('/commits/')){
+        await publicResponse.body?.cancel();
+        const data={private:false,full_name:path};await store.insert(key,{data,cached_at:Date.now()},'cached');
+        if(old)await store.transition(key,'cached','cached',{data,cached_at:Date.now()});
+        return data;
+      }
+      await publicResponse?.body?.cancel();
+    }
+    throw new Fault(500, 'UPSTREAM_RATE_LIMIT', 'GitHub access or rate limit prevented commit analysis; retry later.');
+  }
   if (!response.ok) throw new Fault(500, 'UPSTREAM_UNAVAILABLE', 'GitHub returned an unexpected error.');
   const text = await response.text();
   if (text.length > 4 * 1024 * 1024) throw new Fault(500, 'ANALYSIS_FAILED', 'GitHub response exceeds the supported size.');

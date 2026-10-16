@@ -40,4 +40,11 @@ This repository includes the supplied Sites framework scaffold and its license n
 
 ## Status
 
-The complete Phase 3 report, deployment evidence, models, limitations, registry entry and remaining coordination steps are being captured under `docs/`. Cross-team results and class-registry changes must be recorded only after they actually occur.
+- [Phase 3 writeup](docs/phase3-writeup.md)
+- [Delivered system models](docs/models.md)
+- [Operating/common-spec clarifications](docs/shared-spec.md)
+- [Hosted test evidence](docs/evidence/deployed-run.json)
+- [Registry row](docs/registry-entry.csv)
+- [Remaining submission/pod steps](docs/submission-checklist.md)
+
+Cross-team results and class-registry changes are pending. Do not substitute self-testing for the required partner tests.
