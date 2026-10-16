@@ -1,22 +1,22 @@
 {
-  "started_at": "2026-10-16T21:04:27.701Z",
-  "finished_at": "2026-10-16T21:04:40.142Z",
-  "version": "290483cf80fc2672b93adca6ab6eb10e41b88546",
+  "started_at": "2026-10-16T21:28:35.774Z",
+  "finished_at": "2026-10-16T21:28:49.028Z",
+  "version": "ac5196ab16429071e69f33e7236de9d57c80a867",
   "health": {
     "status": "ok",
     "tool_version": "3.0.0",
-    "release": "290483cf80fc2672b93adca6ab6eb10e41b88546",
+    "release": "ac5196ab16429071e69f33e7236de9d57c80a867",
     "storage": "configured"
   },
   "setup": {
     "status": 201,
     "body": {
-      "session_id": "7e6d5ffb-3e75-461e-bd51-f7c0e84532c1"
+      "session_id": "47837e62-fb7e-45a0-b697-b85584804234"
     }
   },
   "response_status": 200,
   "report": {
-    "session_id": "7e6d5ffb-3e75-461e-bd51-f7c0e84532c1",
+    "session_id": "47837e62-fb7e-45a0-b697-b85584804234",
     "target_url": "https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/system",
     "results": [
       {
@@ -113,8 +113,8 @@
       {
         "event": "ANALYSIS_NOT_FOUND",
         "status": "404",
-        "count": 3,
-        "average_ms": 120.3
+        "count": 5,
+        "average_ms": 108.6
       },
       {
         "event": "COMMUNICATION_FAILED",
@@ -125,20 +125,20 @@
       {
         "event": "INVALID_REQUEST",
         "status": "400",
-        "count": 15,
-        "average_ms": 43.3
+        "count": 25,
+        "average_ms": 44.6
       },
       {
         "event": "NOT_FOUND",
         "status": "404",
-        "count": 5,
+        "count": 12,
         "average_ms": 0
       },
       {
         "event": "RESOURCE_NOT_FOUND",
         "status": "404",
-        "count": 2,
-        "average_ms": 398
+        "count": 6,
+        "average_ms": 387
       },
       {
         "event": "UPSTREAM_RATE_LIMIT",
@@ -155,45 +155,45 @@
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "count": 17,
-        "average_ms": 807.9
+        "count": 35,
+        "average_ms": 822.1
       }
     ],
     "recent": [
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 749,
-        "analysis_id": "a5602d06-e253-4cc2-ade9-9f37cb1e656b",
-        "created_at": "2026-10-16T21:04:38.428Z"
+        "elapsed_ms": 620,
+        "analysis_id": "567662af-5f3b-4ffc-8b3d-28d7c892b326",
+        "created_at": "2026-10-16T21:28:47.038Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 665,
-        "analysis_id": "38e4de36-d2f2-4b41-8d78-d62ca453ef41",
-        "created_at": "2026-10-16T21:04:37.583Z"
+        "elapsed_ms": 956,
+        "analysis_id": "735e1708-3b03-4ae0-b91c-c9e44d79293c",
+        "created_at": "2026-10-16T21:28:46.316Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 721,
-        "analysis_id": "210e4a34-262f-440d-8adc-68387e70872f",
-        "created_at": "2026-10-16T21:04:36.784Z"
+        "elapsed_ms": 659,
+        "analysis_id": "7c1b9232-e438-40a4-b1c1-1385b78e73b9",
+        "created_at": "2026-10-16T21:28:45.249Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 676,
-        "analysis_id": "04246d89-7d90-408f-a637-dc67eac25764",
-        "created_at": "2026-10-16T21:04:35.963Z"
+        "elapsed_ms": 704,
+        "analysis_id": "48a02060-3b3c-4748-8023-a07d47530b11",
+        "created_at": "2026-10-16T21:28:44.503Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 669,
-        "analysis_id": "698ee2d9-b210-4f8b-b1f1-c3581a1ecee2",
-        "created_at": "2026-10-16T21:04:35.193Z"
+        "elapsed_ms": 653,
+        "analysis_id": "3606389d-675e-4e5a-b295-c8d456538455",
+        "created_at": "2026-10-16T21:28:43.704Z"
       }
     ]
   }

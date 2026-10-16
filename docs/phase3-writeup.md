@@ -2,7 +2,7 @@
 
 **Documentation Tracker | Team 16 | Pod: Teams 15 and 16**
 
-Prepared for Anish Paspuleti. Delivery date: October 16, 2026. Implementation version tested: `290483cf80fc2672b93adca6ab6eb10e41b88546` (tool version 3.0.0, configuration classification-v1). Repository: https://github.com/ani131/documentation-tracker-phase3. Service: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site. This is an evidence-based submission draft: class-registry publication, partner tests, shared-contract approval and teammate-specific GenAI statements remain pending and are explicitly identified below.
+Prepared for Anish Paspuleti. Delivery date: October 16, 2026. Implementation version tested: `ac5196ab16429071e69f33e7236de9d57c80a867` (tool version 3.0.0, configuration classification-v1). Repository: https://github.com/ani131/documentation-tracker-phase3. Service: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site. This is an evidence-based submission draft: class-registry publication, partner tests, shared-contract approval and teammate-specific GenAI statements remain pending and are explicitly identified below.
 
 ## Q1.1 Increment description
 
@@ -20,23 +20,25 @@ The delivered service implements the Phase 2 Section 6.1 milestone: network acce
 
 ## Q2.1 Deployed web service
 
-The public HTTPS service runs through Sites on Cloudflare Workers, with Vinext 1.0.0-beta.5 and React 19.2.6; Worker routing is geographically distributed, while the hosting tools do not expose a specific database region [3, README: deployment/runtime]. The tested source is commit `290483cf80fc2672b93adca6ab6eb10e41b88546`, also returned by `/health`; release publication builds the checked-in source, pushes that exact commit to hosting, saves a version and deploys it, with the same runtime source mirrored to GitHub. Endpoints have no intentional sleep schedule and require no grader authentication, but provider outages, GitHub access failures and quotas can interrupt service. No paid plan or billing change was initiated, exact Sites account quotas/costs were not exposed, and anonymous GitHub REST calls are generally limited to 60/hour per source IP, mitigated by metadata caching [4, Primary rate limit for unauthenticated users].
+The public HTTPS service runs through Sites on Cloudflare Workers, with Vinext 1.0.0-beta.5 and React 19.2.6; Worker routing is geographically distributed, while the hosting tools do not expose a specific database region [3, README: deployment/runtime]. The tested source is commit `ac5196ab16429071e69f33e7236de9d57c80a867`, also returned by `/health`; release publication builds the checked-in source, pushes that exact commit to hosting, saves a version and deploys it, with the same runtime source mirrored to GitHub. Endpoints have no intentional sleep schedule and require no grader authentication, but provider outages, GitHub access failures and quotas can interrupt service. No paid plan or billing change was initiated, exact Sites account quotas/costs were not exposed, and anonymous GitHub REST calls are generally limited to 60/hour per source IP, mitigated by metadata caching [4, Primary rate limit for unauthenticated users].
 
 ## Q2.2 Registry and team documentation
+
+Readable interactive API guide: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/api-docs. It explains all seven required operations, request fields, examples and response statuses, and provides editable requests, actual responses, copyable cURL commands and the setup/run/report workflow. The remaining submission steps are linked at https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/api-docs#finish-phase3. These are presentation improvements; the API contract remains version 3.0.0.
 
 Registry entry: **not yet updated**; the class spreadsheet URL was not supplied. A ready-to-copy row is in `docs/registry-entry.csv`, dated 2026-10-16; copying it to the actual class registry is still required. Team documentation: https://github.com/ani131/documentation-tracker-phase3/tree/main/docs | Updated on: 2026-10-16. It contains this report, current models, both OpenAPI documents, operating instructions, delivered functionality and known limitations; the proposed common-spec clarifications require Team 15 agreement.
 
 ## Q2.3 Operational experience and observability evidence
 
-The Phase 2 operation plan evolved from GitHub evidence files to D1 session/cache/event records and one R2 JSON object per analysis, separated from all analyzed repositories [5, Overview; 6, Workers API: put/get and conditional operations]. No runtime GitHub credential or LLM key is needed; hosting binds DB/BUCKET, release SHA is a nonsecret runtime value, and any future credential must be a read-only secret rather than a personal repository-write token. Fresh UUID sessions/results avoid destructive resets, and no public deletion operation is exposed. Structured events and `/system/metrics` show completion/error counts, elapsed time and result IDs without request bodies, tokens or source patches; their excerpt below was captured from the deployed service at 2026-10-16 05:04:40 PM EDT.
+The Phase 2 operation plan evolved from GitHub evidence files to D1 session/cache/event records and one R2 JSON object per analysis, separated from all analyzed repositories [5, Overview; 6, Workers API: put/get and conditional operations]. No runtime GitHub credential or LLM key is needed; hosting binds DB/BUCKET, release SHA is a nonsecret runtime value, and any future credential must be a read-only secret rather than a personal repository-write token. Fresh UUID sessions/results avoid destructive resets, and no public deletion operation is exposed. Structured events and `/system/metrics` show completion/error counts, elapsed time and result IDs without request bodies, tokens or source patches; their excerpt below was captured from the deployed service at 2026-10-16 05:28:49 PM EDT.
 
 ```json
 {
   "event": "analysis_completed",
   "status": "SUCCESS",
-  "elapsed_ms": 749,
-  "analysis_id": "a5602d06-e253-4cc2-ade9-9f37cb1e656b",
-  "created_at": "2026-10-16T21:04:38.428Z"
+  "elapsed_ms": 620,
+  "analysis_id": "567662af-5f3b-4ffc-8b3d-28d7c892b326",
+  "created_at": "2026-10-16T21:28:47.038Z"
 }
 ```
 
@@ -64,7 +66,7 @@ Contract version at delivery: Phase 2 v1 prose, represented by Team 16 OpenAPI 3
 
 Tester base: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/tester. Base URL override: POST `{"target_url":"<approved-system-base>"}` to `/test/setup`; the returned session ID is passed exactly once to `/test/run`, and a lost response is retrieved through `/test/report?session_id=...`. For a CLI invocation, run `npm ci`, then `node scripts/run-deployed.mjs --system-url <system-base> --tester-url <tester-base>`; no test-code edits are required. Our target requires no authentication or fixture reset; another pod URL must first be added to APPROVED_TARGETS.
 
-Response received: HTTP 200 with one complete suite report, session `7e6d5ffb-3e75-461e-bd51-f7c0e84532c1`, 14 unique test results and code/component/system coverage objects. Conforms to the implemented course report schema: yes, checked locally with JSON Schema and inspected in the hosted response [7, Schema Object]. Known common-contract gaps: no supplied agreed detailed project OpenAPI, no agreed component coverage inventory, and no per-session code instrumentation; null counts and explanatory basis fields make those gaps explicit.
+Response received: HTTP 200 with one complete suite report, session `47837e62-fb7e-45a0-b697-b85584804234`, 14 unique test results and code/component/system coverage objects. Conforms to the implemented course report schema: yes, checked locally with JSON Schema and inspected in the hosted response [7, Schema Object]. Known common-contract gaps: no supplied agreed detailed project OpenAPI, no agreed component coverage inventory, and no per-session code instrumentation; null counts and explanatory basis fields make those gaps explicit.
 
 ## Q4.2 Tests for new functionality
 
@@ -81,15 +83,15 @@ Oracles: the synthetic fixture's before/after trees were created intentionally, 
 
 ## Q4.3 Regression and static checks
 
-All delivered behavior has automated regression coverage even though Phase 2 contained only a design and no prior implementation was supplied. GitHub Actions runs checks/tests/build on pushes and pull requests to main. The suite retains tests for all previous failure fixes and tests both correct results and failure reporting. CI run: https://github.com/ani131/documentation-tracker-phase3/actions/runs/38966767221 | Recorded conclusion: success.
+All delivered behavior has automated regression coverage even though Phase 2 contained only a design and no prior implementation was supplied. GitHub Actions runs checks/tests/build on pushes and pull requests to main. The suite retains tests for all previous failure fixes and tests both correct results and failure reporting. CI run: https://github.com/ani131/documentation-tracker-phase3/actions/runs/38969574463 | Recorded conclusion: success.
 
 ## Q4.4 Static checks
 
-Static validation runs JavaScript syntax checks, TypeScript checking of the React/route/typed scaffold, ESLint on application/service/tests/database code, JSON Schema compilation and OpenAPI snapshot export; the core ES modules are dynamically tested rather than claimed to be fully type-checked. A failed check fails CI, and the deployment workflow used here runs checks/build before packaging; branch-protection enforcement and automatic deployment from CI are not configured. CI run: https://github.com/ani131/documentation-tracker-phase3/actions/runs/38966767221.
+Static validation runs JavaScript syntax checks, TypeScript checking of the React/route/typed scaffold, ESLint on application/service/tests/database code, JSON Schema compilation and OpenAPI snapshot export; the core ES modules are dynamically tested rather than claimed to be fully type-checked. A failed check fails CI, and the deployment workflow used here runs checks/build before packaging; branch-protection enforcement and automatic deployment from CI are not configured. CI run: https://github.com/ani131/documentation-tracker-phase3/actions/runs/38969574463.
 
 ## Q4.5 Test results against the deployed system
 
-Run date/time: 2026-10-16 05:04:40 PM EDT | Version tested: `290483cf80fc2672b93adca6ab6eb10e41b88546` | Session: `7e6d5ffb-3e75-461e-bd51-f7c0e84532c1`.
+Run date/time: 2026-10-16 05:28:49 PM EDT | Version tested: `ac5196ab16429071e69f33e7236de9d57c80a867` | Session: `47837e62-fb7e-45a0-b697-b85584804234`.
 
 Tests run: 14 | Passed: 14 | Failed assertions: 0 | Errors: 0 | Skipped: 0. Complete results and live metric evidence: `docs/evidence/deployed-run.json`. These are hosted HTTP results; the separate local suite has 32 passing tests and no skipped tests.
 
