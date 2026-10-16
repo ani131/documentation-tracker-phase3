@@ -2,14 +2,14 @@
 
 **Documentation Tracker | Team 16 | Pod: Teams 15 and 16**
 
-Prepared for Anish Paspuleti. Delivery date: October 16, 2026. Implementation version tested: `66833893f86ad3d8c49c51dacef8fb19a6c5fa61` (tool version 3.0.0, configuration classification-v1). Repository: https://github.com/ani131/documentation-tracker-phase3. Service: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site. This is an evidence-based submission draft: class-registry publication, partner tests, shared-contract approval and teammate-specific GenAI statements remain pending and are explicitly identified below.
+Prepared for Anish Paspuleti. Delivery date: October 16, 2026. Implementation version tested: `290483cf80fc2672b93adca6ab6eb10e41b88546` (tool version 3.0.0, configuration classification-v1). Repository: https://github.com/ani131/documentation-tracker-phase3. Service: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site. This is an evidence-based submission draft: class-registry publication, partner tests, shared-contract approval and teammate-specific GenAI statements remain pending and are explicitly identified below.
 
 ## Q1.1 Increment description
 
 Delivered capability: An engineer can submit a public GitHub repository and fixed commit IDs, receive deterministically classified changes, and retrieve the original saved analysis later. Team 16 delivered the Phase 3 version-resolution, change-classification, validation and evidence-retrieval increment, plus the separately addressable tester required by the course handout. The users are engineering/compliance staff at general-purpose AI model providers, together with podmates and graders comparing implementations. Traceable change evidence supports the documentation-maintenance workflow associated with Article 53(1)(a) and Annex XI of the EU AI Act; the service does not decide legal compliance [1, Article 53(1)(a), Annex XI]. Read-only GitHub commit/comparison metadata supplies file changes without executing repository code [2, Get a commit; Compare two commits]. Documentation findings and authorized review remain scheduled for later milestones, so an empty issues array is not evidence that documentation is current.
 
 - REQ-01 - Detect/classify changes | Status: complete within supported input limits | Demonstrated by AC-01: T-01, T-03, T-13 and classification/root/rename unit tests.
-- REQ-04 - Traceable immutable evidence | Status: partial until the deployment-replacement retrieval demonstration is recorded | Demonstrated by initial AC-06: T-02, T-14, separate UUID JSON objects and application-store recreation tests. Missing: final live deployment-replacement evidence, if not present in `docs/evidence/persistence-check.json`.
+- REQ-04 - Traceable immutable evidence | Status: complete for the delivered analysis evidence | Demonstrated by initial AC-06: T-02, T-14, separate UUID JSON objects and application-store recreation tests. Deployment-replacement retrieval is recorded in `docs/evidence/persistence-check.json`; the platform does not expose a forced process-restart control.
 - REQ-05 - Explicit inputs/failures | Status: partial across full semester scope; Phase 3 paths implemented | Demonstrated by AC-07 and ordinary AC-08: T-04 through T-11 plus injected upstream/storage/incomplete-comparison tests. Missing: mapping-specific required-check failures, scheduled for Phase 4.
 - REQ-06 - Read-only/safe analysis | Status: partial across full semester scope | Demonstrated by AC-09 read-only URL/method inspection and tests that do not execute scripts or expose exceptions. Missing: authorized-review records and permission enforcement, scheduled for Phase 5.
 - REQ-07 - Consistent testable interface | Status: partial pending common-schema clarification approval | Demonstrated by AC-10/T-12, exported OpenAPI, two base URLs, deterministic output and tester lifecycle tests. Missing: Team 15 agreement on the clarified fields/rules and cross-team evidence.
@@ -20,7 +20,7 @@ The delivered service implements the Phase 2 Section 6.1 milestone: network acce
 
 ## Q2.1 Deployed web service
 
-The public HTTPS service runs through Sites on Cloudflare Workers, with Vinext 1.0.0-beta.5 and React 19.2.6; Worker routing is geographically distributed, while the hosting tools do not expose a specific database region [3, README: deployment/runtime]. The tested source is commit `66833893f86ad3d8c49c51dacef8fb19a6c5fa61`, also returned by `/health`; release publication builds the checked-in source, pushes that exact commit to hosting, saves a version and deploys it, with the same runtime source mirrored to GitHub. Endpoints have no intentional sleep schedule and require no grader authentication, but provider outages, GitHub access failures and quotas can interrupt service. No paid plan or billing change was initiated, exact Sites account quotas/costs were not exposed, and anonymous GitHub REST calls are generally limited to 60/hour per source IP, mitigated by metadata caching [4, Primary rate limit for unauthenticated users].
+The public HTTPS service runs through Sites on Cloudflare Workers, with Vinext 1.0.0-beta.5 and React 19.2.6; Worker routing is geographically distributed, while the hosting tools do not expose a specific database region [3, README: deployment/runtime]. The tested source is commit `290483cf80fc2672b93adca6ab6eb10e41b88546`, also returned by `/health`; release publication builds the checked-in source, pushes that exact commit to hosting, saves a version and deploys it, with the same runtime source mirrored to GitHub. Endpoints have no intentional sleep schedule and require no grader authentication, but provider outages, GitHub access failures and quotas can interrupt service. No paid plan or billing change was initiated, exact Sites account quotas/costs were not exposed, and anonymous GitHub REST calls are generally limited to 60/hour per source IP, mitigated by metadata caching [4, Primary rate limit for unauthenticated users].
 
 ## Q2.2 Registry and team documentation
 
@@ -28,15 +28,15 @@ Registry entry: **not yet updated**; the class spreadsheet URL was not supplied.
 
 ## Q2.3 Operational experience and observability evidence
 
-The Phase 2 operation plan evolved from GitHub evidence files to D1 session/cache/event records and one R2 JSON object per analysis, separated from all analyzed repositories [5, Overview; 6, Workers API: put/get and conditional operations]. No runtime GitHub credential or LLM key is needed; hosting binds DB/BUCKET, release SHA is a nonsecret runtime value, and any future credential must be a read-only secret rather than a personal repository-write token. Fresh UUID sessions/results avoid destructive resets, and no public deletion operation is exposed. Structured events and `/system/metrics` show completion/error counts, elapsed time and result IDs without request bodies, tokens or source patches; their excerpt below was captured from the deployed service at 2026-10-16 04:55:39 PM EDT.
+The Phase 2 operation plan evolved from GitHub evidence files to D1 session/cache/event records and one R2 JSON object per analysis, separated from all analyzed repositories [5, Overview; 6, Workers API: put/get and conditional operations]. No runtime GitHub credential or LLM key is needed; hosting binds DB/BUCKET, release SHA is a nonsecret runtime value, and any future credential must be a read-only secret rather than a personal repository-write token. Fresh UUID sessions/results avoid destructive resets, and no public deletion operation is exposed. Structured events and `/system/metrics` show completion/error counts, elapsed time and result IDs without request bodies, tokens or source patches; their excerpt below was captured from the deployed service at 2026-10-16 05:04:40 PM EDT.
 
 ```json
 {
   "event": "analysis_completed",
   "status": "SUCCESS",
-  "elapsed_ms": 640,
-  "analysis_id": "cca9e22b-7e3c-40b1-b4ce-1dd56cc25a77",
-  "created_at": "2026-10-16T20:55:37.816Z"
+  "elapsed_ms": 749,
+  "analysis_id": "a5602d06-e253-4cc2-ade9-9f37cb1e656b",
+  "created_at": "2026-10-16T21:04:38.428Z"
 }
 ```
 
@@ -64,7 +64,7 @@ Contract version at delivery: Phase 2 v1 prose, represented by Team 16 OpenAPI 3
 
 Tester base: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/tester. Base URL override: POST `{"target_url":"<approved-system-base>"}` to `/test/setup`; the returned session ID is passed exactly once to `/test/run`, and a lost response is retrieved through `/test/report?session_id=...`. For a CLI invocation, run `npm ci`, then `node scripts/run-deployed.mjs --system-url <system-base> --tester-url <tester-base>`; no test-code edits are required. Our target requires no authentication or fixture reset; another pod URL must first be added to APPROVED_TARGETS.
 
-Response received: HTTP 200 with one complete suite report, session `834cff0d-a7f6-402a-b18c-25ed9ca843ad`, 14 unique test results and code/component/system coverage objects. Conforms to the implemented course report schema: yes, checked locally with JSON Schema and inspected in the hosted response [8, Schema Object]. Known common-contract gaps: no supplied agreed detailed project OpenAPI, no agreed component coverage inventory, and no per-session code instrumentation; null counts and explanatory basis fields make those gaps explicit.
+Response received: HTTP 200 with one complete suite report, session `7e6d5ffb-3e75-461e-bd51-f7c0e84532c1`, 14 unique test results and code/component/system coverage objects. Conforms to the implemented course report schema: yes, checked locally with JSON Schema and inspected in the hosted response [7, Schema Object]. Known common-contract gaps: no supplied agreed detailed project OpenAPI, no agreed component coverage inventory, and no per-session code instrumentation; null counts and explanatory basis fields make those gaps explicit.
 
 ## Q4.2 Tests for new functionality
 
@@ -77,24 +77,23 @@ Response received: HTTP 200 with one complete suite report, session `834cff0d-a7
 | AC-09 / REQ-06 | Fixed GitHub GET/method/redirect assertions, script-path metadata check, redacted exception checks and source inspection | automated plus inspection; authorized review deferred |
 | AC-10 / REQ-07 | T-12 (five runs); OpenAPI schema compilation/response validation; session/concurrency/report/abort tests | success/failure/boundary |
 
-Oracles: the synthetic fixture's before/after trees were created intentionally, and the eight expected path/type/category entries were written separately in the versioned manifest. Tests use full commit IDs, an explicit rule version and exact JSON fields; there is no runtime generative model. The fixtures have been checked against actual GitHub metadata, but independent Team 15 approval of these expectations is still pending. The local suite uses Node's built-in test runner and coverage measurement [7, Test runner; Collecting code coverage].
+Oracles: the synthetic fixture's before/after trees were created intentionally, and the eight expected path/type/category entries were written separately in the versioned manifest. Tests use full commit IDs, an explicit rule version and exact JSON fields; there is no runtime generative model. The fixtures have been checked against actual GitHub metadata, but independent Team 15 approval of these expectations is still pending. The local suite uses Node's built-in test runner and coverage measurement [8, Test runner; Collecting code coverage].
 
 ## Q4.3 Regression and static checks
 
-All delivered behavior has automated regression coverage even though Phase 2 contained only a design and no prior implementation was supplied. GitHub Actions runs checks/tests/build on pushes and pull requests to main. The suite retains tests for all previous failure fixes and tests both correct results and failure reporting. CI run: https://github.com/ani131/documentation-tracker-phase3/actions | Recorded conclusion: See linked workflow history.
+All delivered behavior has automated regression coverage even though Phase 2 contained only a design and no prior implementation was supplied. GitHub Actions runs checks/tests/build on pushes and pull requests to main. The suite retains tests for all previous failure fixes and tests both correct results and failure reporting. CI run: https://github.com/ani131/documentation-tracker-phase3/actions/runs/38966767221 | Recorded conclusion: success.
 
 ## Q4.4 Static checks
 
-Static validation runs JavaScript syntax checks, TypeScript checking of the React/route/typed scaffold, ESLint on application/service/tests/database code, JSON Schema compilation and OpenAPI snapshot export; the core ES modules are dynamically tested rather than claimed to be fully type-checked. A failed check fails CI, and the deployment workflow used here runs checks/build before packaging; branch-protection enforcement and automatic deployment from CI are not configured. CI run: https://github.com/ani131/documentation-tracker-phase3/actions.
+Static validation runs JavaScript syntax checks, TypeScript checking of the React/route/typed scaffold, ESLint on application/service/tests/database code, JSON Schema compilation and OpenAPI snapshot export; the core ES modules are dynamically tested rather than claimed to be fully type-checked. A failed check fails CI, and the deployment workflow used here runs checks/build before packaging; branch-protection enforcement and automatic deployment from CI are not configured. CI run: https://github.com/ani131/documentation-tracker-phase3/actions/runs/38966767221.
 
 ## Q4.5 Test results against the deployed system
 
-Run date/time: 2026-10-16 04:55:39 PM EDT | Version tested: `66833893f86ad3d8c49c51dacef8fb19a6c5fa61` | Session: `834cff0d-a7f6-402a-b18c-25ed9ca843ad`.
+Run date/time: 2026-10-16 05:04:40 PM EDT | Version tested: `290483cf80fc2672b93adca6ab6eb10e41b88546` | Session: `7e6d5ffb-3e75-461e-bd51-f7c0e84532c1`.
 
-Tests run: 14 | Passed: 12 | Failed assertions: 0 | Errors: 2 | Skipped: 0. Complete results and live metric evidence: `docs/evidence/deployed-run.json`. These are hosted HTTP results; the separate local suite has 32 passing tests and no skipped tests.
+Tests run: 14 | Passed: 14 | Failed assertions: 0 | Errors: 0 | Skipped: 0. Complete results and live metric evidence: `docs/evidence/deployed-run.json`. These are hosted HTTP results; the separate local suite has 32 passing tests and no skipped tests.
 
-- T-09 | Classification: system | Target returned an unexpected server error. Cause: GitHub access/quota prevented required resource lookup in this run. Plan: retain explicit errors, reduce immutable metadata calls and use anonymous public-page absence checks; resolve remaining quota exposure in Phase 4.
-- T-10 | Classification: system | Target returned an unexpected server error. Cause: GitHub access/quota prevented required resource lookup in this run. Plan: retain explicit errors, reduce immutable metadata calls and use anonymous public-page absence checks; resolve remaining quota exposure in Phase 4.
+No failing, errored or skipped tests in this recorded run. Earlier runtime/operational failures and their corrections are described below and retained in the engineering history.
 
 Earlier deployment testing exposed unsupported `redirect:error` in the actual Worker runtime and GitHub access/quota failures; the first was corrected to manual redirects and the latter motivated immutable metadata caching and anonymous public-page status fallback. The returned suite never misclassified those earlier server failures as passed tests. Local source-line coverage was 97.99% for analysis.mjs, 96.83% for service.mjs and 100% for tester.mjs/spec.mjs in the recorded run, using controlled upstreams and the real SQLite schema; these percentages are not substituted for unavailable deployed session coverage.
 
@@ -161,7 +160,7 @@ The Phase 4 milestone still targets explicit source-to-document mappings, missin
 
 ## Q8.1 Actual GenAI use
 
-For Anish Paspuleti, Codex was delegated repository scaffolding, analyzer/tester implementation, tests, deployment, model drafting and this writeup; no Claude usage is evidenced in this session, although Phase 2 anticipated both tools. Verification included JavaScript/TypeScript/lint/schema checks, 32 local tests, GitHub CI and actual hosted requests, while human review by Anish and teammates remains a submission responsibility rather than a completed event claimed here. A concrete correction was the generated redirect:error setting: Node tests accepted it, the Worker rejected it, local runtime diagnostics identified the incompatibility, and manual redirect handling was implemented and retested. The work used bounded increments, independent fixture expectations, explicit limitations and protected credentials, but broad code/documentation delegation exceeded a narrow suggestion-only use of GenAI; no LLM runs inside the delivered detector.
+For Anish Paspuleti, Codex was delegated repository scaffolding, analyzer/tester implementation, tests, deployment, model drafting and this writeup; no Claude usage is evidenced in this session, although Phase 2 anticipated both tools. Verification included JavaScript/TypeScript/lint/schema checks, 32 local tests, GitHub CI and actual hosted requests, while human review by Anish and teammates remains a submission responsibility rather than a completed event claimed here. A concrete correction was the generated redirect:error setting: Node tests accepted it, the Worker rejected it, local runtime diagnostics identified the incompatibility, and manual redirect handling was implemented and retested. The work used bounded increments, independent fixture expectations, explicit limitations and protected credentials, consistent with Phase 2's engineering-assistance and no-runtime-LLM approach; implementation and deployment were delegated broadly, and independent human review remains pending.
 
 Other teammates: no individual use/verification records were supplied. Each teammate must add their own truthful 3-4 sentences if the team submission requires them; do not copy Anish's record as theirs.
 
@@ -179,6 +178,6 @@ Other teammates: no individual use/verification records were supplied. Each team
 
 [6] Cloudflare. "R2 Workers API reference." Sections: put/get and conditional operations. https://developers.cloudflare.com/r2/api/workers/workers-api-reference/. Accessed: 2026-10-16.
 
-[7] Node.js contributors. "Test runner." Node.js 24 documentation, collecting code coverage. https://nodejs.org/download/release/v24.16.0/docs/api/test.html. Accessed: 2026-10-16.
+[7] OpenAPI Initiative. "OpenAPI Specification v3.1.1." https://spec.openapis.org/oas/v3.1.1.html. Accessed: 2026-10-16.
 
-[8] OpenAPI Initiative. "OpenAPI Specification v3.1.1." https://spec.openapis.org/oas/v3.1.1.html. Accessed: 2026-10-16.
+[8] Node.js contributors. "Test runner." Node.js 24 documentation, collecting code coverage. https://nodejs.org/download/release/v24.16.0/docs/api/test.html. Accessed: 2026-10-16.

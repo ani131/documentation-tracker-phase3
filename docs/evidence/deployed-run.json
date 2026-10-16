@@ -1,22 +1,22 @@
 {
-  "started_at": "2026-10-16T20:55:28.001Z",
-  "finished_at": "2026-10-16T20:55:39.871Z",
-  "version": "66833893f86ad3d8c49c51dacef8fb19a6c5fa61",
+  "started_at": "2026-10-16T21:04:27.701Z",
+  "finished_at": "2026-10-16T21:04:40.142Z",
+  "version": "290483cf80fc2672b93adca6ab6eb10e41b88546",
   "health": {
     "status": "ok",
     "tool_version": "3.0.0",
-    "release": "66833893f86ad3d8c49c51dacef8fb19a6c5fa61",
+    "release": "290483cf80fc2672b93adca6ab6eb10e41b88546",
     "storage": "configured"
   },
   "setup": {
     "status": 201,
     "body": {
-      "session_id": "834cff0d-a7f6-402a-b18c-25ed9ca843ad"
+      "session_id": "7e6d5ffb-3e75-461e-bd51-f7c0e84532c1"
     }
   },
   "response_status": 200,
   "report": {
-    "session_id": "834cff0d-a7f6-402a-b18c-25ed9ca843ad",
+    "session_id": "7e6d5ffb-3e75-461e-bd51-f7c0e84532c1",
     "target_url": "https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/system",
     "results": [
       {
@@ -61,15 +61,13 @@
       },
       {
         "test_id": "T-09",
-        "outcome": "error",
-        "source": "system",
-        "message": "Target returned an unexpected server error."
+        "outcome": "pass",
+        "message": "Nonexistent repository returns 404: expected behavior observed."
       },
       {
         "test_id": "T-10",
-        "outcome": "error",
-        "source": "system",
-        "message": "Target returned an unexpected server error."
+        "outcome": "pass",
+        "message": "Nonexistent commit returns 404: expected behavior observed."
       },
       {
         "test_id": "T-11",
@@ -115,8 +113,8 @@
       {
         "event": "ANALYSIS_NOT_FOUND",
         "status": "404",
-        "count": 2,
-        "average_ms": 114.5
+        "count": 3,
+        "average_ms": 120.3
       },
       {
         "event": "COMMUNICATION_FAILED",
@@ -127,8 +125,8 @@
       {
         "event": "INVALID_REQUEST",
         "status": "400",
-        "count": 10,
-        "average_ms": 44.2
+        "count": 15,
+        "average_ms": 43.3
       },
       {
         "event": "NOT_FOUND",
@@ -137,10 +135,16 @@
         "average_ms": 0
       },
       {
+        "event": "RESOURCE_NOT_FOUND",
+        "status": "404",
+        "count": 2,
+        "average_ms": 398
+      },
+      {
         "event": "UPSTREAM_RATE_LIMIT",
         "status": "500",
-        "count": 8,
-        "average_ms": 136.4
+        "count": 10,
+        "average_ms": 131.9
       },
       {
         "event": "UPSTREAM_UNAVAILABLE",
@@ -151,45 +155,45 @@
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "count": 9,
-        "average_ms": 853.9
+        "count": 17,
+        "average_ms": 807.9
       }
     ],
     "recent": [
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 640,
-        "analysis_id": "cca9e22b-7e3c-40b1-b4ce-1dd56cc25a77",
-        "created_at": "2026-10-16T20:55:37.816Z"
+        "elapsed_ms": 749,
+        "analysis_id": "a5602d06-e253-4cc2-ade9-9f37cb1e656b",
+        "created_at": "2026-10-16T21:04:38.428Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 694,
-        "analysis_id": "f8e23afc-5202-440d-9d54-3a87d179be02",
-        "created_at": "2026-10-16T20:55:37.046Z"
+        "elapsed_ms": 665,
+        "analysis_id": "38e4de36-d2f2-4b41-8d78-d62ca453ef41",
+        "created_at": "2026-10-16T21:04:37.583Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 760,
-        "analysis_id": "69120bd1-7ba8-478d-a23b-4ce13ed4c8b0",
-        "created_at": "2026-10-16T20:55:36.222Z"
+        "elapsed_ms": 721,
+        "analysis_id": "210e4a34-262f-440d-8adc-68387e70872f",
+        "created_at": "2026-10-16T21:04:36.784Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 946,
-        "analysis_id": "ba203009-f9bc-4ce4-bad0-f956c49d8837",
-        "created_at": "2026-10-16T20:55:35.328Z"
+        "elapsed_ms": 676,
+        "analysis_id": "04246d89-7d90-408f-a637-dc67eac25764",
+        "created_at": "2026-10-16T21:04:35.963Z"
       },
       {
         "event": "analysis_completed",
         "status": "SUCCESS",
-        "elapsed_ms": 695,
-        "analysis_id": "5f4ab20b-df72-47e2-9002-664b01a4f10c",
-        "created_at": "2026-10-16T20:55:34.208Z"
+        "elapsed_ms": 669,
+        "analysis_id": "698ee2d9-b210-4f8b-b1f1-c3581a1ecee2",
+        "created_at": "2026-10-16T21:04:35.193Z"
       }
     ]
   }
