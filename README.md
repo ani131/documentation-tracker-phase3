@@ -3,6 +3,8 @@
 Read-only change analysis for public GitHub repositories, immutable analysis evidence, and the required cross-team HTTP tester.
 
 - Dashboard: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site
+- Readable API explorer: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/api-docs
+- Finish Phase 3: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/api-docs#finish-phase3
 - System base: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/system
 - Tester base: https://documentation-tracker-ani131.hazyrobin67.chatgpt.site/tester
 - System contract: [OpenAPI](docs/openapi-system.json)
