@@ -1,1 +1,1 @@
-Two-layer architecture.
+Three-layer architecture.
