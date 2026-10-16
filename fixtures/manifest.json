@@ -1,0 +1,48 @@
+{
+  "repository": "ani131/documentation-tracker-phase3",
+  "base_commit": "f624a1495614d16ebb8c16f83ee08ad1cc45c4db",
+  "commit_id": "7ea7a732f06dc51ce17caecdb215f9341e252e30",
+  "expected_changes": [
+    {
+      "path": "architecture/model.md",
+      "change_type": "MODIFIED",
+      "category": "ARCHITECTURE"
+    },
+    {
+      "path": "design/new.md",
+      "change_type": "ADDED",
+      "category": "DESIGN"
+    },
+    {
+      "path": "design/old.md",
+      "change_type": "DELETED",
+      "category": "DESIGN"
+    },
+    {
+      "path": "requirements/model.md",
+      "change_type": "ADDED",
+      "category": "REQUIREMENT"
+    },
+    {
+      "path": "spec/api.json",
+      "change_type": "DELETED",
+      "category": "SPECIFICATION"
+    },
+    {
+      "path": "src/model.py",
+      "change_type": "MODIFIED",
+      "category": "IMPLEMENTATION"
+    },
+    {
+      "path": "src/new.ts",
+      "change_type": "ADDED",
+      "category": "IMPLEMENTATION"
+    },
+    {
+      "path": "src/remove.py",
+      "change_type": "DELETED",
+      "category": "IMPLEMENTATION"
+    }
+  ],
+  "oracle": "Hand-authored from the two synthetic Git trees; rename normalized to delete+add. Pod approval pending."
+}

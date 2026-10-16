@@ -1,0 +1,296 @@
+TAP version 13
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":14,"analysis_id":"626400c8-785c-4192-a0eb-1b581293ff12","at":"2026-10-16T20:44:04.274Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"a878afb5-b115-435e-8653-8d8f7a49cde3","at":"2026-10-16T20:44:04.281Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"b2112d2e-ea0f-4225-97d4-01e1f4e96fb7","at":"2026-10-16T20:44:04.287Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"43aaa9d3-8aab-4940-9568-9320a923beed","at":"2026-10-16T20:44:04.288Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"335fb617-404a-4b92-ab0b-351ff22f8d3c","at":"2026-10-16T20:44:04.290Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.297Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.303Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.308Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.316Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.321Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.325Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.332Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.337Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.342Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.350Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.356Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.357Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.357Z"}
+# {"event":"analysis_completed","status":"ERROR","elapsed_ms":2,"analysis_id":"3e8acb0a-2ecb-4402-8b96-1f35747b8d15","at":"2026-10-16T20:44:04.366Z"}
+# {"event":"analysis_completed","status":"ERROR","elapsed_ms":1,"analysis_id":"be8d4b52-1668-4335-ac1a-f17eaacf4c27","at":"2026-10-16T20:44:04.372Z"}
+# {"event":"analysis_completed","status":"ERROR","elapsed_ms":2,"analysis_id":"083b8745-5b80-4ecb-956b-aab2fb7e2d67","at":"2026-10-16T20:44:04.381Z"}
+# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.388Z"}
+# {"event":"UPSTREAM_RATE_LIMIT","status":500,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.394Z"}
+# {"event":"UPSTREAM_UNAVAILABLE","status":500,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.399Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.403Z"}
+# {"event":"STORAGE_FAILED","status":500,"elapsed_ms":4,"analysis_id":null,"at":"2026-10-16T20:44:04.413Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"6f96ad15-5a36-46cf-8469-dd9305fabc69","at":"2026-10-16T20:44:04.420Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"d5a203df-4062-498e-b083-6905ff1c7cb9","at":"2026-10-16T20:44:04.422Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"9c1cda36-281f-498d-b1b9-be32d7336fea","at":"2026-10-16T20:44:04.423Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"e318c4e7-4db3-40fd-8790-19d1e25814d5","at":"2026-10-16T20:44:04.424Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"7333ef58-e9a1-43c8-9321-517d1fd5e480","at":"2026-10-16T20:44:04.429Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"0a861904-d762-4aed-8bf5-73d2705c3b15","at":"2026-10-16T20:44:04.435Z"}
+# {"event":"SESSION_EXISTS","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.440Z"}
+# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.442Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.443Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.445Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.446Z"}
+# {"event":"REPORT_NOT_READY","status":409,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.454Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"e6a6515f-3f5a-40cd-97c4-873a551f216e","at":"2026-10-16T20:44:04.458Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"06bcecaa-e33a-4a41-a2c5-8dc7c28303f0","at":"2026-10-16T20:44:04.478Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.481Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.483Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.484Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.485Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.486Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.487Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.488Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.488Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"d333c475-fc1d-4554-88d7-284e022d9d6d","at":"2026-10-16T20:44:04.489Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"1f1b74a7-6c7a-4493-9b4b-932851ff8252","at":"2026-10-16T20:44:04.490Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"b013c3b6-d70e-4432-9c9c-7a1cc431fc22","at":"2026-10-16T20:44:04.491Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"6e915ad9-42a5-4ac0-a8da-0c7a8ce137fd","at":"2026-10-16T20:44:04.492Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"12f6e9d0-7990-4022-9339-cdfc035bcd44","at":"2026-10-16T20:44:04.493Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"7df79f63-509c-45ab-baa3-9f4f3f6a98e5","at":"2026-10-16T20:44:04.496Z"}
+# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.503Z"}
+# {"event":"RUN_CONFLICT","status":409,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.514Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":4,"analysis_id":"f34847f0-09c8-405b-8aa4-f623392f73e6","at":"2026-10-16T20:44:04.518Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"d0b4bf8e-90b1-4812-98b4-ab57608b7461","at":"2026-10-16T20:44:04.522Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.524Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.526Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.529Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.531Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.532Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.534Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.535Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.536Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"22167423-a2ad-4fe3-8664-6cdba8089feb","at":"2026-10-16T20:44:04.538Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"b383927f-b6a4-49f4-bc81-ea01128041bf","at":"2026-10-16T20:44:04.540Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"601065e4-af1d-4860-b2f4-32cf99c18086","at":"2026-10-16T20:44:04.544Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"f813ee3c-7137-4226-89d1-0ca609fc9193","at":"2026-10-16T20:44:04.546Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"aab9afe0-2ec5-41ef-a65f-ef17adb56406","at":"2026-10-16T20:44:04.548Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"ccb84b2f-e0ce-4c82-8919-47d4e19ce155","at":"2026-10-16T20:44:04.554Z"}
+# {"event":"TARGET_NOT_APPROVED","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.565Z"}
+# {"event":"TARGET_NOT_APPROVED","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.566Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.566Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.567Z"}
+# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.568Z"}
+# {"event":"SESSION_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.568Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"89c3ff88-d99d-427b-860d-357b3e0cc84f","at":"2026-10-16T20:44:04.624Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":2,"analysis_id":"2de3aa50-d007-4cc8-bd3f-cd517cd189de","at":"2026-10-16T20:44:04.761Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.765Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"a5567966-e766-425c-aa88-4827ba51b90a","at":"2026-10-16T20:44:04.768Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"148d991c-2af6-423e-9eca-066a0c01b595","at":"2026-10-16T20:44:04.771Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.772Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.774Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.775Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.776Z"}
+# {"event":"INVALID_REQUEST","status":400,"elapsed_ms":1,"analysis_id":null,"at":"2026-10-16T20:44:04.778Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":2,"analysis_id":null,"at":"2026-10-16T20:44:04.781Z"}
+# {"event":"RESOURCE_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.782Z"}
+# {"event":"ANALYSIS_NOT_FOUND","status":404,"elapsed_ms":0,"analysis_id":null,"at":"2026-10-16T20:44:04.783Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"ba56a381-1241-4e39-9be9-258d17330274","at":"2026-10-16T20:44:04.784Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"4201afed-68b6-43b2-8a61-ab4f43efcbb2","at":"2026-10-16T20:44:04.785Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"a08509b4-4738-47f3-b00d-cef4bbf3de55","at":"2026-10-16T20:44:04.786Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"8091815f-403e-41e2-ad4b-cef07d217b79","at":"2026-10-16T20:44:04.788Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":1,"analysis_id":"a991564b-74ec-4619-bddc-d3a763b3eeda","at":"2026-10-16T20:44:04.789Z"}
+# {"event":"analysis_completed","status":"SUCCESS","elapsed_ms":0,"analysis_id":"51b7c620-6707-4227-91cd-3c7475e26383","at":"2026-10-16T20:44:04.790Z"}
+# Subtest: AC-01: classify all categories with directory precedence
+ok 1 - AC-01: classify all categories with directory precedence
+  ---
+  duration_ms: 3.1022
+  type: 'test'
+  ...
+# Subtest: AC-01: normalize rename and copy without dropping old paths
+ok 2 - AC-01: normalize rename and copy without dropping old paths
+  ---
+  duration_ms: 2.2711
+  type: 'test'
+  ...
+# Subtest: AC-01/AC-06: exact fixture result, retrieval and recreated application store
+ok 3 - AC-01/AC-06: exact fixture result, retrieval and recreated application store
+  ---
+  duration_ms: 76.4084
+  type: 'test'
+  ...
+# Subtest: AC-01: first-parent default, root commit and identical commit boundaries
+ok 4 - AC-01: first-parent default, root commit and identical commit boundaries
+  ---
+  duration_ms: 7.8691
+  type: 'test'
+  ...
+# Subtest: AC-07: reject missing
+ok 5 - AC-07: reject missing
+  ---
+  duration_ms: 7.7077
+  type: 'test'
+  ...
+# Subtest: AC-07: reject malformed
+ok 6 - AC-07: reject malformed
+  ---
+  duration_ms: 5.2551
+  type: 'test'
+  ...
+# Subtest: AC-07: reject repository
+ok 7 - AC-07: reject repository
+  ---
+  duration_ms: 4.666
+  type: 'test'
+  ...
+# Subtest: AC-07: reject type
+ok 8 - AC-07: reject type
+  ---
+  duration_ms: 7.716
+  type: 'test'
+  ...
+# Subtest: AC-07: reject base
+ok 9 - AC-07: reject base
+  ---
+  duration_ms: 4.6627
+  type: 'test'
+  ...
+# Subtest: AC-07: reject extra
+ok 10 - AC-07: reject extra
+  ---
+  duration_ms: 5.1111
+  type: 'test'
+  ...
+# Subtest: AC-07: reject array
+ok 11 - AC-07: reject array
+  ---
+  duration_ms: 5.6795
+  type: 'test'
+  ...
+# Subtest: AC-07: reject null
+ok 12 - AC-07: reject null
+  ---
+  duration_ms: 5.181
+  type: 'test'
+  ...
+# Subtest: AC-07: reject oversize
+ok 13 - AC-07: reject oversize
+  ---
+  duration_ms: 5.6044
+  type: 'test'
+  ...
+# Subtest: AC-07: unsupported Content-Type rejected
+ok 14 - AC-07: unsupported Content-Type rejected
+  ---
+  duration_ms: 7.3831
+  type: 'test'
+  ...
+# Subtest: AC-08: nonexistent repo, commit and saved analysis return explicit 404
+ok 15 - AC-08: nonexistent repo, commit and saved analysis return explicit 404
+  ---
+  duration_ms: 7.0472
+  type: 'test'
+  ...
+# Subtest: AC-08: incomplete comparison is saved as ERROR; no false success
+ok 16 - AC-08: incomplete comparison is saved as ERROR; no false success
+  ---
+  duration_ms: 23.9033
+  type: 'test'
+  ...
+# Subtest: AC-08/AC-09: upstream errors are explicit and redact secret-bearing exceptions
+ok 17 - AC-08/AC-09: upstream errors are explicit and redact secret-bearing exceptions
+  ---
+  duration_ms: 21.8778
+  type: 'test'
+  ...
+# Subtest: AC-08: failed evidence write returns 500 and cannot be retrieved
+ok 18 - AC-08: failed evidence write returns 500 and cannot be retrieved
+  ---
+  duration_ms: 9.7914
+  type: 'test'
+  ...
+# Subtest: AC-10: five runs are stable and use separate immutable objects
+ok 19 - AC-10: five runs are stable and use separate immutable objects
+  ---
+  duration_ms: 15.6097
+  type: 'test'
+  ...
+# Subtest: AC-09: only fixed GitHub HTTPS GETs are made; scripts are metadata
+ok 20 - AC-09: only fixed GitHub HTTPS GETs are made; scripts are metadata
+  ---
+  duration_ms: 5.933
+  type: 'test'
+  ...
+# Subtest: system sessions reject duplicates, invalid and unknown IDs
+ok 21 - system sessions reject duplicates, invalid and unknown IDs
+  ---
+  duration_ms: 10.8329
+  type: 'test'
+  ...
+# Subtest: tester setup does not run tests; one complete run; immutable lookup and conflict
+ok 22 - tester setup does not run tests; one complete run; immutable lookup and conflict
+  ---
+  duration_ms: 56.8611
+  type: 'test'
+  ...
+# Subtest: tester run claims are atomic across simultaneous calls
+ok 23 - tester run claims are atomic across simultaneous calls
+  ---
+  duration_ms: 53.0275
+  type: 'test'
+  ...
+# Subtest: tester rejects unapproved targets and SSRF, and unknown sessions
+ok 24 - tester rejects unapproved targets and SSRF, and unknown sessions
+  ---
+  duration_ms: 11.8707
+  type: 'test'
+  ...
+# Subtest: tester forwards system setup failure exactly and does not create runnable session
+ok 25 - tester forwards system setup failure exactly and does not create runnable session
+  ---
+  duration_ms: 29.404
+  type: 'test'
+  ...
+# Subtest: tester reports communication and unexpected system errors without mislabeling pass
+ok 26 - tester reports communication and unexpected system errors without mislabeling pass
+  ---
+  duration_ms: 18.2054
+  type: 'test'
+  ...
+# Subtest: actual observability endpoint contains durable, redacted operational evidence
+ok 27 - actual observability endpoint contains durable, redacted operational evidence
+  ---
+  duration_ms: 9.1701
+  type: 'test'
+  ...
+# Subtest: both OpenAPI documents include every required operation and defined schemas
+ok 28 - both OpenAPI documents include every required operation and defined schemas
+  ---
+  duration_ms: 2.4815
+  type: 'test'
+  ...
+# Subtest: contract schemas compile and validate actual success, error and tester reports
+ok 29 - contract schemas compile and validate actual success, error and tester reports
+  ---
+  duration_ms: 173.3045
+  type: 'test'
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1721.1899
+# start of coverage report
+# --------------------------------------------------------------
+# file          | line % | branch % | funcs % | uncovered lines
+# --------------------------------------------------------------
+# src           |        |          |         | 
+#  analysis.mjs | 100.00 |    92.41 |  100.00 | 
+#  service.mjs  |  95.24 |    82.28 |   50.00 | 37-38 57
+#  spec.mjs     | 100.00 |   100.00 |  100.00 | 
+#  tester.mjs   | 100.00 |    86.21 |  100.00 | 
+# tests         |        |          |         | 
+#  helpers.mjs  |  98.04 |    95.65 |   93.75 | 40
+# --------------------------------------------------------------
+# all files     |  98.93 |    89.11 |   96.84 | 
+# --------------------------------------------------------------
+# end of coverage report
