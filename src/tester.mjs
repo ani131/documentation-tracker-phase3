@@ -29,7 +29,7 @@ export function targetUrl(value, request, env) {
 }
 export async function callTarget(target,path,options,fetcher,timeout=55000) {
   try {
-    const response=await fetcher(target+path,{...options,signal:AbortSignal.timeout(timeout),redirect:'error'});
+    const response=await fetcher(target+path,{...options,signal:AbortSignal.timeout(timeout),redirect:'manual'});
     let value;try{value=await response.json();}catch{return {status:response.status,value:null};}
     return {status:response.status,value};
   } catch {throw new Fault(500,'COMMUNICATION_FAILED','No target response was available within 55 seconds.','communication');}

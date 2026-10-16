@@ -32,10 +32,11 @@ export default function Home(){
       <label>Head commit <input required value={commit} onChange={e=>setCommit(e.target.value)} spellCheck={false}/></label>
       <label>Base commit <span className="optional">optional; defaults to first parent</span><input value={base} onChange={e=>setBase(e.target.value)} spellCheck={false}/></label>
       <button disabled={!!busy} type="submit">{busy==='analysis'?'Analyzing...':'Analyze & save evidence'} <span>↗</span></button></form>
-      <p className="small">Read-only analysis. Repository code is never downloaded or executed. Documentation warnings arrive in Phase 4.</p></div>
+      <p className="small">Read-only analysis. Repository code is never executed or modified. Documentation warnings arrive in Phase 4.</p></div>
     <aside><div className="panel test-panel"><div className="section-title"><span className="step">02</span><h2>Verify the service</h2></div><p>Run the independent HTTP tester against this deployment using fixed Git commits and expected results.</p><button className="secondary" disabled={!!busy} onClick={()=>void testSystem()}>{busy==='tester'?'Running suite...':'Run the acceptance suite'} <span>→</span></button><div className="links"><a href="/system/openapi.json">System OpenAPI ↗</a><a href="/tester/openapi.json">Tester OpenAPI ↗</a><a href="/system/metrics" target="_blank" rel="noreferrer">Operational metrics ↗</a><a href="https://github.com/ani131/documentation-tracker-phase3">Source & documentation ↗</a></div></div><p className="note">For cross-team testing, send an approved system base URL to <code>/tester/test/setup</code>. The suite reports pass, fail, error, and skip separately.</p></aside></section>
     <section className="panel result"><div className="result-heading"><h2>Result & evidence</h2><span className="pill">JSON</span></div><p role="status" aria-live="polite">{status}</p>{result?<><pre tabIndex={0}>{JSON.stringify(result,null,2)}</pre>{typeof result.analysis_id==='string'&&<a href={'/system/analysis/'+result.analysis_id}>Retrieve this saved analysis ↗</a>}</>:<div className="empty">Your analysis or test report will appear here.</div>}</section>
     <footer><span>Documentation Tracker · v3.0.0</span><span>Human reviewers retain compliance responsibility.</span></footer>
   </main>;
 }
+
 

@@ -82,7 +82,7 @@ async function github(path, store, fetcher) {
   const key = 'github:' + path; const old = await store.get(key);
   if (old && Date.now() - old.cached_at < 10 * 60 * 1000) return old.data;
   let response;
-  try { response = await fetcher('https://api.github.com/repos/' + path, { headers: { 'Accept':'application/vnd.github+json', 'User-Agent':'DocumentationTracker/3.0', 'X-GitHub-Api-Version':'2022-11-28' }, signal: AbortSignal.timeout(10000), redirect:'error' }); }
+  try { response = await fetcher('https://api.github.com/repos/' + path, { headers: { 'Accept':'application/vnd.github+json', 'User-Agent':'DocumentationTracker/3.0', 'X-GitHub-Api-Version':'2022-11-28' }, signal: AbortSignal.timeout(10000), redirect:'manual' }); }
   catch { throw new Fault(500, 'UPSTREAM_UNAVAILABLE', 'GitHub could not be reached within 10 seconds.'); }
   if ([404,422,409].includes(response.status)) throw new Fault(404, 'RESOURCE_NOT_FOUND', 'Public repository or commit was not found.');
   if ([403,429].includes(response.status)) throw new Fault(500, 'UPSTREAM_RATE_LIMIT', 'GitHub access or rate limit prevented analysis; retry later.');

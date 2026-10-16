@@ -69,7 +69,7 @@ test('AC-10: five runs are stable and use separate immutable objects',async()=>{
 });
 test('AC-09: only fixed GitHub HTTPS GETs are made; scripts are metadata',async()=>{
   const {env}=environment();const urls=[];const mock=githubMock({files:[{filename:'scripts/execute.sh',status:'added'}]});
-  const fetcher=async(url,options)=>{urls.push(url);assert.ok(url.startsWith('https://api.github.com/repos/'));assert.equal(options.method,undefined);assert.equal(options.redirect,'error');return mock(url,options);};
+  const fetcher=async(url,options)=>{urls.push(url);assert.ok(url.startsWith('https://api.github.com/repos/'));assert.equal(options.method,undefined);assert.equal(options.redirect,'manual');return mock(url,options);};
   const r=await call(env,'/system/analyze',input,fetcher);assert.equal(r.body.changes[0].path,'scripts/execute.sh');assert.ok(urls.length);assert.deepEqual(r.body.issues,[]);
 });
 test('system sessions reject duplicates, invalid and unknown IDs',async()=>{
@@ -113,6 +113,18 @@ test('tester reports communication and unexpected system errors without mislabel
     const r=await call(env,'/tester/test/run',s.body,failing);assert.equal(r.status,200);
     assert.equal(r.body.results[0].outcome,'error');assert.equal(r.body.results[0].source,mode);assert.equal(r.body.results.length,PLAN.length);
   }
+});
+test('tester abort retains all planned outcomes and never permits another run',async()=>{
+  const {env}=environment();const s=await call(env,'/tester/test/setup',{target_url:'https://local.test/system'});
+  const original=Date.now;const now=original();let reads=0;let r;
+  Date.now=()=>now+(++reads>=4?200000:0);
+  try{r=await call(env,'/tester/test/run',s.body);}finally{Date.now=original;}
+  assert.equal(r.status,500);assert.equal(r.body.source,'tester');
+  const saved=await call(env,'/tester/test/report?session_id='+s.body.session_id);
+  assert.equal(saved.status,200);assert.equal(saved.body.results.length,PLAN.length);
+  assert.equal(saved.body.results[0].outcome,'error');assert.equal(saved.body.results[0].source,'tester');
+  assert.ok(saved.body.results.slice(1).every(t=>t.outcome==='skip'));
+  assert.equal((await call(env,'/tester/test/run',s.body)).status,409);
 });
 test('actual observability endpoint contains durable, redacted operational evidence',async()=>{
   const {env}=environment();await call(env,'/system/analyze',input);const r=await call(env,'/system/metrics');
